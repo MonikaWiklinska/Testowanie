@@ -26,15 +26,15 @@ Scenario Outline: unsuccesful authenticate to the application
 	Then I can see error message "Authentication failed. Login or password are incorrect.”
 	And I can not see my account details 
 Examples:
-| login															| password	|
-| monikawiklinska.gmail.com										| 123456	|
-| monika														| 123456	|
-| monikawiklinska@gmail											| 123456	|
-| monikawiklinska@com.											| 123456	|
-| monikawiklinska@gmailcom										| 123456	|
+| login								| password	|
+| monikawiklinska.gmail.com					| 123456	|
+| monika							| 123456	|
+| monikawiklinska@gmail						| 123456	|
+| monikawiklinska@com.						| 123456	|
+| monikawiklinska@gmailcom					| 123456	|
 | monikawiklinskamonikawiklinskamonikawiklinskamonika@gmail.com	| 123456	|
-|																| 123456	|
-| monikawiklinska@gmail.com										|			|
+|								| 123456	|
+| monikawiklinska@gmail.com					|		|
 
 Feature: authenticate to the application
 Background:
