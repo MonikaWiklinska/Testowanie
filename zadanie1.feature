@@ -7,6 +7,7 @@ Scenario Outline: successful authenticate to the application
 	And I am on login page
 	When I fill login field with <login> 
 	And fill <password> 
+	Then I successful authenticate to the application
 	And I can see my account details – name, surname, email address, mailing adres
 Examples:
 | login								| password	|
